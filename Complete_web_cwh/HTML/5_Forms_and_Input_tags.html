@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5_Forms_and_Input_tags</title>
+</head>
+
+<body>
+    <h2>
+        <center>HTML FORM</center>
+    </h2>
+
+    <!--HTML Form
+        1- Use div tag to create divisions instead of br(cuz line break can be achieved through css)
+        2-Input tag:<input> is a self-closing tag
+            attributes:
+                a- type='': text, radio, email, datetime,submit, number('e'and be type in number input), checkbox, reset, select
+                b- name='': name so that backend can identify the input(multi-radio with same name can regester only one value.)
+        3- textarea Tag: <textarea></textarea>
+        4- label tag: Labels a perticular id of input
+            syntax:<label for='id'></label>
+    -->
+    <form action="mailto" method="post">
+        <div>
+            <label for="name">Name:</label> 
+            <input type="text" name="myname" id="name"></div>
+        <br>
+        <div>Role: <input type="text"></div><br>
+        <div>
+            Email:<input type="email" name="myemail">
+        </div><br>
+        <div>
+            Date:<input type="date" name="mydate">
+        </div><br>
+        <div>
+            Bonus:<input type="number" name="mybonus">
+        </div><br>
+        <div>
+            Are you enligible?: <input type="checkbox" name="eligiblecheck" checked> <!--cheched: use to check the checkbox bydefault-->
+        </div><br>
+        <div>
+            Gender: Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender">
+            Other<input type="radio" name="mygender"> 
+        </div><br>
+        <div>
+            Write about yourself:<br>
+            <textarea name="mytext" cols="30" rows="10"></textarea >
+        </div><br>
+        <div>
+            <label for="select1">Which car company you prefer?: </label>
+            <select name="myselect" id="select1">
+                <option value="Bugatti">Bugatti</option>
+                <option value="Rolls-Royce">Rolls-Royce</option>
+                <option value="Ferrari" selected>Ferrari</option> <!--selected: to set defalut selection-->
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div><br>
+    </form>
+</body>
+
+</html>

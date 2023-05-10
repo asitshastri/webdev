@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables</title>
+</head>
+
+<body>
+    <center><h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">Unordered list</a></h3></center>
+
+    <!--Unordered List
+        Attributes:
+            1- type=['circle','disc','square','Triangle(not all browser support)']
+    -->
+    <ul type="square">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates!</li>
+    </ul>
+
+    <hr><center><h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">Ordered list</a></h3></center><hr>
+
+    <!--Ordered List
+        Attributes:
+            1- type='': 1,A,a,I,i
+            2- start: '1,2,3....'
+
+
+    -->
+    <ol type="I" start="3">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+
+    <hr><center><h3>Nesteded list</h3></center><hr>
+
+    <!--Nested List 1-->
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>
+            <ol>
+                <li><strong>this one is nested as a list item</strong></li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ol>
+        </li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <hr>
+
+    <!--Nested List 2-->
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <ol>
+            <li><strong>this one is nested without list element</strong></li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <hr><center><h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Tables</a></h3></center><hr>
+
+    <!--Table
+        1- <caption></caption>: For define table caption
+        2- <colgroup></colgroup>: HTML element defines a group of columns within a table.
+            step 1: <colgroup><col span='',class=''></col></colgroup>
+            step 2: inside table header 
+        3- Attributes:
+            1- align: left,center,right
+            2- bgcolor: rgb code or # or color name
+            3- border: solid,dotted 
+    -->
+    <table style="border:1px solid;">
+        <caption>First Table</caption>
+        <colgroup>
+            <col span="4" style="background-color: #ofo;"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+            <tr>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

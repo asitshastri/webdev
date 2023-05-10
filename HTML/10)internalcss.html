@@ -1,0 +1,150 @@
+<!--INTERNAL CSS WORKS BY ADDING <style> TAG 
+    INSIDE THE HEAD OF THE HTML FILE-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <STYle>
+            /*THIS IS A COMMMENT IN CSS*/
+            /* NOW TYPE NAME OF ELEMENT YOU WANT TO EDIT FOLLOWED BY {}*/
+            body{
+                background-color: powderblue;
+            }
+            hr{
+                /* DEFAULT STYLE OF HR TAG
+                display: block;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 1px;*/
+                border-color: beige;
+                height: 10px;
+                width: 30%; /*we can also use percentage instead of pixels*/
+                /*⭐using percentage make sitemore responsive*/
+                border-style: dotted none none; /* doing this the horizontal lines dissappears as the default style is none*/
+                /*BORDER-STYLE SYNTAX
+                IF 1 VALUES- APPLIES TO ALL 4 SIDES 
+                IF 2 VALUES- APPLIES TO TOP AND BOTTOM SIDE
+                IF 3 VALUES- APPLIES FIRST TO TOP, SECOND TO LEFT AND RIGHT, IN LAST ITS APPLIED TO BOTTOM
+                IF 4 VALUES- APPLIES TO ALL 4 SIDES */
+                /*ALTERNATE METHOD
+                border-style:none;
+                border-top-style:dotted;
+                */
+                border-color: gray;
+                border-width:10px;
+            }
+            /* INITIALLY
+            everything in an html is a box as we can seee in the pesticide extension of chrome*/
+
+        </STYle>
+    </head>
+    
+    <body > <!--pick color from "colorhunt.co"-->
+        <center>
+            <h1>Pet Shop</h1>
+        </center>
+        <table>
+            <tr>
+                <td><img src="sources/pup_profile.jpg" alt="This is a Pet" width="50px" height="100px"></td>
+                <td>
+                    <p>Name: <strong>Fluffy</strong></p>
+                    <p>11 months</p>
+                    <p>Labradaour</p>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <h2><strong>Hobbies</strong></h2>
+        <table>
+            <ol type="1">
+                <li>________________</li>
+                <li>________________</li>
+                <li>________________</li>
+                <li>________________</li>
+                <li>________________</li>
+            </ol>
+        </table>
+        <hr><br>
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Skills</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Attacking</td>
+                                <td>⭐</td>
+                            </tr>
+                            <tr>
+                                <td>Fetching</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Skills</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ptty Training</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>High Five</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+    
+        <h2>CONTACT US:</h2>
+        <P><STrong>PetShop</STrong></P>
+        <p>Fictional Address</p>
+        <P>6843246846414</P>
+        <p>myemail@email.com</p>
+        <form action="mailto:" email@email.com" method="post">
+            <!--Action attribute decides what will happen when we hit subbmit-->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname">
+            <br><br>
+            <label for="age">DOB: </label>
+            <input type="date" id="age">
+            <label for="fav_color">Pick a Color: </label>
+            <input type="color" id="fav_color">
+            <br><br>
+            <label for="Your_email">Your Email: </label>
+            <input type="text">
+            <label for="pass">Password</label>
+            <input type="password">
+            <br>
+            <textarea name="txt" id="txt" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+    
+    </html>
