@@ -1,0 +1,57 @@
+<!-- What is css?
+    - CSS gi9ves Style to raw HTML
+    - CSS stands for Cascading Style Sheets
+    - CSS is used to give style to our webpages
+    - CSS is used to make website responsive
+    - HTML is used to structure a website
+    - CSS takes responsibility of design.
+ -->
+<!-- CSS syntax: 
+    1- For single selector:  selector { property : value; }
+        ex- p{color:blue;}
+        ex- #id{color:blue;}
+        ex- .class{color:blue;}
+    
+    2- For multiple selector: group of selector { decleration block }
+        ex- header, p.inctorclass{ background-color : red; border-radius : 3px; }
+  -->
+<!-- Ways to add CSS to HTML file
+    1- Inline CSS: CSS is added to the element directly using style attribute
+        ex- <p style=""></p>
+    2- Internal CSS: CSS is kept inside the head tag in <style> tag
+    3- External CSS: CSS is kept seperately inside .css style sheet
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+    <link rel="stylesheet" href="1_css_intro.css">
+    <style>
+        p {
+            color: rgb(245, 184, 245);
+            background-color: seagreen !important;
+        }
+        <link rel="stylesheet" href="1_css_intro.css">
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS Tutorial</h3>
+    <p style="color: red; background-color: yellow;">This is done using Inline CSS. Inline CSS have higher priority then
+        Internal
+        CSS cuz color blue inside style tag inside head does not apply.</p>
+    <P>
+        This is done using Internal CSS &lt;style&gt; tag inside &lt;head&gt; tag.
+    </P>
+    <p>This is done using External CSS Style Sheet. Higher Preference to External CSS if its link is given after
+        &lt;style&gt; tag and if written before &lt;style&gt; tag then Internal CSS will have higher preference.</p>
+    <h3>Priority Order</h3>
+    <h4>Inline CSS>External CSS & Internal CSS last mentioned one have higher preference.</h4>
+    <h5>Note: note add !important to Internal CSS perticular value to give it higher preference(even more than Inline CSS.)</h5>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!-- selectors:
+    - They are used to find a element whoes property will be set
+    - They are used to target HTML element
+    - Selector makes it easy for us to easily target  single/multiple HTNML elements in the markup.
+
+    Types of basic CSS Selector:
+        1- Universal Selector: applies it to all the elements: *{css code}
+        2- CSS element Selector
+        3- CSS id Selector
+        4- CSS class Selector
+        5- CSS grouping Selector
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* (*) All element Selector */
+        *{
+            border: 2px solid red;
+        }
+
+        /* element Selector */
+        footer, span{
+            background-color: pink;
+        }
+        
+        /* id selector */
+        #firstPara{
+            color: greenyellow;
+        }
+        .bgBlue{
+            background-color: blue;
+        }
+    </style>
+ </head>
+ <body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">This is a simlpe paragraph to demonstrate css selector</p>
+    <p class="redElement bgBlue" id="secondPara">This another simple para to demonstratecss selectors</p>
+    <div>
+        <p class="bgBlue">This is yet another simplepara inside the div to demonstrate CSS selectors</p>
+        <span>This is a span</span>
+        <span>This is a span</span>
+        <span>This is another span</span>
+        <span>This is yet another span</span>
+    </div>
+    <footer>This is a Footer</footer>
+
+ </body>
+ </html>

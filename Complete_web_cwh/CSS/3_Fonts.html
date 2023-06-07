@@ -1,0 +1,49 @@
+<!-- CSS Fonts
+    There are 2 type of frots in CSS:
+        1- Web-safe Fonts: these fonts are pre installed in most of the browsers so no error is give while using them.
+
+        2- Web Fonts: these fonts are limited fonts might not be installed in every browser so can give give error if not installed first.
+
+    Font-Stack: fonts can be stacked togeather so that the proability of getting error is decreased.
+        ex:p{ font-family: 'Franklin Gothic Medium', 'Arial Narrow','Arial','sans-serif';}
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <style>
+        *{
+            border: 1px solid;
+        }
+        #firstPara{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* fist mentioned font will be applied first if there is error then send will be applied and so on */
+            font-size: 33px;   /* 1px=1/96th of an inch */
+            line-height: 8em;
+        }
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+        p{
+            line-height: 8em; 
+            /* only works with element Selector */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Fonts</h3>
+    <p id="firsPara">Playing with CSS Foonts.</p>
+    <h3><span>How to add web font</span></h3>
+    <p><span>Go to:</span> fonts.google.com</p>
+    <p><span>Step-1:</span> Select font by clicking on + sign</p>
+    <p><span>step-2:</span> Copy the stylesheet and paste it in the head</p>
+    <p><span>step-3:</span>add the font name in the font-family</p>
+    <
+</body>
+
+</html>

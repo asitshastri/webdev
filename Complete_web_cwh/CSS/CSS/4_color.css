@@ -1,0 +1,13 @@
+#firstPara{
+    color: red; 
+    /* named colors */
+}
+#secondPara{
+    color: rgb(0,0,255);
+    /* rgb colors */
+}
+#thirdPara{
+    /* Hex Colors */
+    color: #60DCA4;
+    background-color: black;
+}
